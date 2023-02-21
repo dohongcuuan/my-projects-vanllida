@@ -16,6 +16,7 @@ import skill from "./src/components/skill";
 import footer from "./src/components/footer";
 import Adminprojects from "./src/components/admin/project";
 import Adminprojectsadd from "./src/components/admin/project-add";
+import AdminProjectEditPage from "./src/components/admin/preject-edit";
 
 
 
@@ -24,7 +25,7 @@ router.on("/", () => render(Homepage, app));
 router.on("admin/projects" ,()=> render(Adminprojects,app));
 router.on("/admin/projects/add",()=> render(Adminprojectsadd,app) )
 
-
+router.on("/admin/projects/:id/edit", ({ data }) => render(() => AdminProjectEditPage(data), app));
 
 
 router.resolve();

@@ -42,7 +42,7 @@ const adminproject = () => {
           <td></td>
           <td><img src = "${project.img}"></td>
           <td><button data-name="#" data-id="${project.id}" class="btn btn-danger btn-remove">Xóa</button>
-        <a href="/admin/projects/${project.id}">Sửa</a>
+        <a href="/admin/projects/${project.id}/edit">Sửa</a>
     </td>    </tr>
                 `
             }).join("")
