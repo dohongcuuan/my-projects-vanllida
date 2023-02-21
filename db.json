@@ -1,24 +1,22 @@
 {
   "projects": [
     {
-      "id":1, 
-      "name": "Kĩ Thuật Trình Bày Trang web",
-      "author":"Zeal College of engineering and research | SPPU",
-      "date": "2020-2024 | Pursuing"
-    }
-    ,
+      "name": "Dự án 3",
+      "title": "quandhph21475",
+      "img": "",
+      "id": 7
+    },
     {
-      "id":2, 
-      "name": "Dự an mẫu",
-      "author":"Zeal College of engineering and research | SPPU",
-      "date": "2020-2024 | Pursuing"
-    }
-    ,
+      "name": "Dự án 3",
+      "title": "quandhph21475",
+      "img": "",
+      "id": 8
+    },
     {
-      "id":2, 
-      "name": "Dự an 1",
-      "author":"Zeal College of engineering and research | SPPU",
-      "date": "2020-2024 | Pursuing"
+      "name": "Dự án 2",
+      "title": "quandhph21475",
+      "img": "",
+      "id": 9
     }
   ]
 }

@@ -20,8 +20,8 @@ const projects = (projects) => {
         </div>
         <div class="content">
         <a href=""><h3>${item.name}</h3></a> 
-        <p>${item.author}</p>
-        <h4>${item.date}</h4>
+        <p>${item.title}</p>
+        <h4></h4>
         </div>
         </div>
 

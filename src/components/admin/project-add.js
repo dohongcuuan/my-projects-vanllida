@@ -1,23 +1,24 @@
 import axios from "axios";
-import { useEffect } from "../../lib";
+import { router, useEffect } from "../../lib";
 
 
 const adminprojectadd = () => {
     useEffect(() => {
         const formAdd = document.getElementById("form-add")
         const projectName = document.getElementById("project-name");
-        const projectTec = document.getElementById("project-technology")
+        const projectTec = document.getElementById("project-title")
         const projectImg = document.getElementById("project-images")
         formAdd.addEventListener("submit",(e)=>{
                 e.preventDefault()
                 const formData = {
                     name: projectName.value,
-                    technology: projectTec.value,
+                    title: projectTec.value,
+                    
                     img: ""
 
                 }
                 axios.post("http://localhost:3000/projects",formData).then(()=>{
-                    console.log("add")
+                    router.navigate("admin/projects")
                 })
         })
     })
@@ -30,7 +31,7 @@ const adminprojectadd = () => {
       </div>
       <div class="form-group">
           <label for="" class="form-label">Công Nghệ</label>
-          <input type="text" class="form-control" id="project-technology" />
+          <input type="text" class="form-control" id="project-title" />
       </div>
       <div class="form-group">
           <label for="" class="form-label">Hình ảnh</label>

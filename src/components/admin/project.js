@@ -38,10 +38,10 @@ const adminproject = () => {
                 <tr>
           <td>${index+1}</td>
           <td>${project.name}</td>
-          <td>${project.technology}</td>
+          <td>${project.title}</td>
           <td></td>
           <td><img src = "${project.img}"></td>
-          <td><button data-name="Vu" data-id="${project.id}" class="btn btn-danger btn-remove">Xóa</button>
+          <td><button data-name="#" data-id="${project.id}" class="btn btn-danger btn-remove">Xóa</button>
         <a href="/admin/projects/${project.id}">Sửa</a>
     </td>    </tr>
                 `
