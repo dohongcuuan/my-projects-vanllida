@@ -16,12 +16,12 @@ const projects = (projects) => {
 
         <div class="box">
         <div class="image">
-        <img draggable="false" src="" alt="">
+        <img draggable="false" src="${item.img}" alt="" >
         </div>
         <div class="content">
         <a href=""><h3>${item.name}</h3></a> 
         <p>${item.title}</p>
-        <h4></h4>
+        <a href=""><h4>${item.github}</h4></a>
         </div>
         </div>
 

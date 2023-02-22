@@ -39,8 +39,9 @@ const adminproject = () => {
           <td>${index+1}</td>
           <td>${project.name}</td>
           <td>${project.title}</td>
-          <td></td>
-          <td><img src = "${project.img}"></td>
+          <td>${project.github}</td>
+          <td><img src = "${project.img}" style="
+          width: 270px;></td>
           <td><button data-name="#" data-id="${project.id}" class="btn btn-danger btn-remove">Xóa</button>
         <a href="/admin/projects/${project.id}/edit">Sửa</a>
     </td>    </tr>
