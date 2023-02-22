@@ -3,27 +3,39 @@
     {
       "id": 9,
       "name": "Dự án 2",
-      "title": "quandhph21475",
-      "github": "",
+      "title": "html,css,php.js",
+      "github": "https://github.com/hongquando4623/quandhph21475_assigment",
       "img": [
-        "https://res.cloudinary.com/dfengnp59/image/upload/v1677069763/ECMA/ttx3nhtwldt9ghcrheby.jpg"
+        "https://res.cloudinary.com/dfengnp59/image/upload/v1677084153/ECMA/act6toq94jk2m5p4kf5n.jpg"
       ]
     },
     {
       "id": 10,
       "name": "Dự án 100",
       "title": "html,css,php.js",
-      "github": "",
+      "github": "https://github.com/hongquando4623/quandhph21475_assigment",
       "img": [
-        "https://res.cloudinary.com/dfengnp59/image/upload/v1677070995/ECMA/hyc5bhxuqxsjlxxdljno.jpg"
+        "https://res.cloudinary.com/dfengnp59/image/upload/v1677084168/ECMA/u5dfnrh4ss9waljvpc7z.jpg"
       ]
     },
     {
-      "name": "Kĩ Thuật Trình Bày Trang web",
-      "title": "PHP",
-      "github": "https://github.com/hongquando4623/quandhph21475_assigment",
-      "img": "",
-      "id": 11
+      "id": 11,
+      "name": "JS nâng cao",
+      "title": "Javasrcip",
+      "github": "https://github.com/hongquando4623/JavaScript-n-ng-cao",
+      "img": [
+        "https://res.cloudinary.com/dfengnp59/image/upload/v1677084177/ECMA/lzrsgwgt2lajtspgze7r.jpg"
+      ]
+    }
+  ],
+  "home": [
+    {
+      "id": 1,
+      "name": "Quân",
+      "title": "Front End Developer",
+      "img": [
+        "https://res.cloudinary.com/dfengnp59/image/upload/v1677081782/ECMA/uixzxb4iw8dasylbisvc.jpg"
+      ]
     }
   ]
 }

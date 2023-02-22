@@ -1,5 +1,6 @@
-import img from '../../public/img/avt.jpg';
-const header = () => {
+
+const header = (homes) => {
+  console.log(homes)
   return `<div>
   <header>
   <a href="/" class="logo"><i class="fab fa-node-js"></i> Q</a>
@@ -22,10 +23,12 @@ const header = () => {
 
 <section class="home" id="home">
 <div id="particles-js"></div>
+ ${homes.map((item)=>{
+return`
 
 <div class="content">
-<h2>Hi There,<br/> I'm Quân <span>Sable</span></h2>
-<p>i am into <span class="typing-text">Front End Developer</span></p>
+<h2>Hi There,<br/> I'm ${item.name} <span>Sable</span></h2>
+<p>i am into <span class="typing-text">${item.title}</span></p>
 <a href="#about" class="btn"><span>About Me</span>
 <i class="fas fa-arrow-circle-down"></i>
 </a>
@@ -41,8 +44,12 @@ const header = () => {
 </div>
 </div>
 <div class="image">
-<img draggable="false" class="tilt" src="${img}" alt="">
+<img draggable="false" class="tilt" src="${item.img}" alt="">
 </div>
+
+`
+ }).join("")}
+
 </section></div>`
   
   

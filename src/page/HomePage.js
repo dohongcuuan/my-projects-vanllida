@@ -10,15 +10,17 @@ import { useEffect, useState } from "../lib"
 
 const Homepage = () => {
   const [project , setProject]= useState([])
+  const[homes , setAbout]=useState([])
   useEffect(()=>{
     axios.get("http://localhost:3000/projects")
     .then(({data})=>setProject(data))
-
-
+    axios.get("http://localhost:3000/home")
+    .then(({data})=>setAbout(data))
+        
   },[])
     
   return ` <div>
-    ${header()}
+    ${header(homes)}
     ${About()}
     ${skill()}
     ${projects(project)}

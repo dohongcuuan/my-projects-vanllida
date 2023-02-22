@@ -1,41 +1,42 @@
+
 import axios from "axios";
-import { router, useEffect, useState } from "../../lib";
+import { router, useEffect, useState } from "../../../lib";
 
 
-const AdminProjectEditPage = ({ id }) => {
+
+const AdminAboutEdit = ({ id }) => {
   
 
-    const [project, setProject] = useState({});
+    const [About, setAbout] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:3000/projects/${id}`)
+        fetch(`http://localhost:3000/home/${id}`)
             .then((response) => response.json())
-            .then((data) => setProject(data));
+            .then((data) => setAbout(data));
     }, []);
     useEffect(() => {
         const form = document.getElementById("form-edit");
-        const projectName = document.getElementById("project-name");
-        const projectTec = document.getElementById("project-title");
-        const projectGithub = document.getElementById("project-github");
-        const projectImg = document.getElementById("project-images");
+        const AboutName = document.getElementById("About-name");
+        const Abouttitle = document.getElementById("About-title");
+        const Aboutimages= document.getElementById("images");
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
-            const urls = await uploadfile(projectImg.files)
+            const urls = await uploadfile(Aboutimages.files)
             console.log(urls);
             const formData = {
                 id,
-                name: projectName.value,
-                title:projectTec.value,
-                github: projectGithub.value,
+                name: AboutName.value,
+                title: Abouttitle.value,
+                
                 img: urls,
             };
 
-            fetch("http://localhost:3000/projects/" + id, {
+            fetch("http://localhost:3000/home/" + id, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(formData),
-            }).then(() => router.navigate("/admin/projects"));
+            }).then(() => router.navigate("/admin/about"));
         });
     });
     const uploadfile = async (files) => {
@@ -69,25 +70,20 @@ const AdminProjectEditPage = ({ id }) => {
     <form action="" id="form-edit">
         <div class="form-group">
             <label for="" class="form-label">Tên Dự án</label>
-            <input type="text" class="form-control" id="project-name" value="${project.name}" />
+            <input type="text" class="form-control" id="About-name" value="${About.name}" />
         </div>
         <div class="form-group">
             <label for="" class="form-label">Công Nghệ</label>
-            <input type="text" class="form-control" id="project-title" value="${project.title}" />
+            <input type="text" class="form-control" id="About-title" value="${About.title}" />
         </div>
-        <div class="form-group">
-      <label for="" class="form-label">Link Dự Án</label>
-      <input type="text" class="form-control" id="project-github" value="${project.github}" />
-        </div>
-        
-        <div class="form-group">
+       <div class="form-group">
             <label for="" class="form-label">Hình ảnh</label>
-            <input type="file" multiple class="form-control" id="project-images" value="${project.img}" />
+            <input type="file" multiple class="form-control" id="images" />
         </div>
         
-        <button class="btn btn-primary">Thêm dự án</button>
+        <button class="btn btn-primary">Cập Nhật</button>
     </form>
     </div>`;
 };
 
-export default AdminProjectEditPage;
+export default AdminAboutEdit;

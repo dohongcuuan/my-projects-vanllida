@@ -1,5 +1,5 @@
 
-import img from '../../public/img/duan.jpg';
+
 const projects = (projects) => {
     
   return `
@@ -8,7 +8,7 @@ const projects = (projects) => {
 
   <h1 class="heading"><i class=""></i>  <span>Work</span></h1>
 
-    <p class="qoute">.</p>
+   
 
     <div class="box-container">
     ${projects.map((item)=>{
@@ -21,7 +21,7 @@ const projects = (projects) => {
         <div class="content">
         <a href=""><h3>${item.name}</h3></a> 
         <p>${item.title}</p>
-        <a href=""><h4>${item.github}</h4></a>
+        <a href="${item.github}"><h4>Link Dự Án</h4></a>
         </div>
         </div>
 
@@ -37,7 +37,9 @@ const projects = (projects) => {
    
 
 </div>
-</section></div>`
+</section>
+</div>
+`
    
   
 }

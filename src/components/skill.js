@@ -4,7 +4,8 @@ import img3 from '../../public/img/html-5--v1.png';
 import img4 from '../../public/img/javascript--v1.png';
 import img5 from '../../public/img/php-logo.png';
 import img6 from '../../public/img/Tailwind_CSS_Logo.svg.png';
-
+import img7 from '../../public/img/wordpress.png'
+import img8 from '../../public/img/github .png'
 
 const skill = () => {
   return `
@@ -51,6 +52,19 @@ const skill = () => {
                 <span>TailWindCSS</span>
               </div>
             </div>
+            <div class="bar">
+              <div class="info">
+                <img src="${img7}"/>
+                <span>wordpress</span>
+              </div>
+            </div>
+            <div class="bar">
+            <div class="info">
+              <img src="${img8}"/>
+              <span>Github</span>
+            </div>
+          </div>
+          
             
         
 
