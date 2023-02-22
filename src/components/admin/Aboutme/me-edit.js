@@ -22,7 +22,7 @@ const AdminMeEdit = ({ id }) => {
         const Aboutmephone = document.getElementById("Aboutme-phone")
         const Aboutmeemail = document.getElementById("Aboutme-email")
         const Aboutmeplace = document.getElementById("Aboutme-place")
-        const AboutmeImg = document.getElementById("Aboutme-images");
+        const AboutmeImg = document.getElementById("Aboutme-images")
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
             const urls = await uploadfile(AboutmeImg.files)

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { router, useEffect, useState } from "../../lib";
+import { router, useEffect, useState } from "../../../lib";
 
 
 const AdminProjectEditPage = ({ id }) => {

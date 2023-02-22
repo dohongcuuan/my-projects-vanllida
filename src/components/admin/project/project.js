@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useEffect, useState } from "../../lib"
+import { useEffect, useState } from "../../../lib"
 
 const adminproject = () => {
     const [projects,setProjects]=useState([])
