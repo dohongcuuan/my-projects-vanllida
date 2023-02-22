@@ -19,6 +19,8 @@ import Adminprojectsadd from "./src/components/admin/project-add";
 import AdminProjectEditPage from "./src/components/admin/preject-edit";
 import adminAbout from "./src/components/admin/home/about";
 import AdminAboutEdit from "./src/components/admin/home/about-edit";
+import adminMe from "./src/components/admin/Aboutme/me";
+import AdminMeEdit from "./src/components/admin/Aboutme/me-edit";
 
 
 
@@ -27,6 +29,9 @@ import AdminAboutEdit from "./src/components/admin/home/about-edit";
 router.on("/", () => render(Homepage, app));
 router.on("admin/about", ()=>render(adminAbout,app));
 router.on("/admin/about/:id/edit",({data})=>render(()=>AdminAboutEdit(data),app));
+router.on("admin/aboutme", ()=>render(adminMe,app));
+router.on("/admin/aboutme/:id/edit", ({ data }) => render(()=>AdminMeEdit(data),app));
+
 router.on("admin/projects" ,()=> render(Adminprojects,app));
 router.on("/admin/projects/add",()=> render(Adminprojectsadd,app) )
 

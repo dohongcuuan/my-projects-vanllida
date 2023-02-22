@@ -72,7 +72,7 @@ const AdminProjectEditPage = ({ id }) => {
             <input type="text" class="form-control" id="project-name" value="${project.name}" />
         </div>
         <div class="form-group">
-            <label for="" class="form-label">Công Nghệ</label>
+            <label for="" class="form-label">Ngôn Ngữ</label>
             <input type="text" class="form-control" id="project-title" value="${project.title}" />
         </div>
         <div class="form-group">

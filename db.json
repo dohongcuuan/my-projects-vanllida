@@ -37,5 +37,20 @@
         "https://res.cloudinary.com/dfengnp59/image/upload/v1677081782/ECMA/uixzxb4iw8dasylbisvc.jpg"
       ]
     }
+  ],
+  "About": [
+    {
+      "id": 1,
+      "name": "Quân Đỗ",
+      "title": "Front End Developer",
+      "introduce": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nisi repudiandae corporis inventore officiis reiciendis soluta suscipit quas. Adipisci, repudiandae. Repellat laudantium numquam voluptate quo dolorum temporibus nisi ducimus explicabo.",
+      "age": "19",
+      "phone": "+84338976647",
+      "email": "dohongquan459@gmail.com",
+      "place": "Cao Đẳng  FPT Polytechnic",
+      "img": [
+        "https://res.cloudinary.com/dfengnp59/image/upload/v1677094328/ECMA/nxh2iyil6lpprxigxpi2.jpg"
+      ]
+    }
   ]
 }

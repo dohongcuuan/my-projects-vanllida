@@ -25,7 +25,7 @@ const adminproject = () => {
               <tr>
                   <th>#</th>
                   <th>Tên dự án</th>
-                  <th>Công nghệ</th>
+                  <th>Ngôn Ngữ</th>
                   <th>Link Github</th>
                   <th>Hình ảnh</th>
                   <th></th>

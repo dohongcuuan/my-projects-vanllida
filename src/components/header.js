@@ -1,6 +1,6 @@
 
 const header = (homes) => {
-  console.log(homes)
+  
   return `<div>
   <header>
   <a href="/" class="logo"><i class="fab fa-node-js"></i> Q</a>
